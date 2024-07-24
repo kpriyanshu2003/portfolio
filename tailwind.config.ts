@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import scrollbarhide from "tailwind-scrollbar-hide";
 
 const config: Config = {
   content: [
@@ -8,6 +9,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        "fira-code": ["Fira Code", "monospace"],
+        "bio-tif": ["Bio Tif", "sans-serif"],
+        "bio-tif-bold": ["Bio Tif Bold", "sans-serif"],
+        "neuzeit-grotesk": ["Neuzeit Grotesk", "serif"],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -15,6 +22,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [scrollbarhide],
 };
 export default config;
